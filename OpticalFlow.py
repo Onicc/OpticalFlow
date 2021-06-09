@@ -35,8 +35,8 @@ def image_loader(input_rgb, scale):
 def optical_flow(img_1, img_2):
     scale = 8
     kernel_1 = 5
-    kernel_2 = 15
-    threshold = 255*kernel_1*kernel_1*0.1
+    kernel_2 = 25
+    threshold = 255*kernel_1*kernel_1*0.2
     threshold_var = 2000
     input_rgb_1, input_gray_1 = image_loader(img_1, scale)
     input_rgb_2, input_gray_2 = image_loader(img_2, scale)
